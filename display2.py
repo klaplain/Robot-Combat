@@ -8,12 +8,8 @@ from tkinter import *
 from tkinter.ttk import Label
 import paho.mqtt.client as mqtt # Import the MQTT library
 import time # The time library is useful for delays
-# import RPi.GPIO as GPIO
 
 mqtt_server = "192.168.4.1"
-#mqtt_server = "192.168.0.60"
-#mqtt_server = "10.255.128.68"
-#mqtt_server = "127.0.0.1"
 
 MQTT_client_ID = "robotcombat_display"
 
@@ -33,11 +29,6 @@ maxtime = 180 #secs
 timercounter = maxtime
 tenthsecondcounter = 0
 solenoidtime = 20
-
-#define port for solenoid trap door
-# GPIO.setmode(GPIO.BOARD)
-# GPIO.setup(7, GPIO.OUT)
-# GPIO.output(7,False)
 
 # **************************************************************
 #
